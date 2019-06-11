@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.itheima.dao.SysLogMapper">
+
+    <!--保存日志-->
+    <!--public void add(SysLog sysLog);-->
+    <insert id="add" parameterType="sysLog">
+        insert into t_syslog(id,name,status,op_time) values (null ,#{name},#{status},#{op_time})
+    </insert>
+
+</mapper>
